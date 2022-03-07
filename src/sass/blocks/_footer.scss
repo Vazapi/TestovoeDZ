@@ -1,0 +1,70 @@
+.footer {
+    padding: 20px 50px;
+    height: 100px;
+    // background-color: rgb(26, 26, 26);
+    background-color: rgb(37, 1, 104);
+    &__text {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    &__social {
+        margin: 0 auto;
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        a {
+            text-decoration: none;
+            :hover {
+                color: rgb(144, 192, 236);
+                border-color: rgb(144, 192, 236);
+            }
+            :hover>span:before {
+                color: rgb(144, 192, 236);
+                border-color: rgb(144, 192, 236);
+            }
+            :active {
+                border-color:rgb(148, 148, 148);
+            }
+            :active>span:before {
+                color: rgb(148, 148, 148);
+            }
+        }
+        li {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-color: rgb(37, 1, 104);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(255, 255, 255);
+            
+           
+        }
+    }
+    .icon-instagram {
+        &:before {
+            content: "\ea92";
+            color: #fff;
+            
+        }
+        
+    }
+    .icon-facebook {
+        &:before {
+            content: "\ea90";
+            color: #fff;
+        }
+    }
+    .icon-vk {
+        &:before {
+            content: "\ea98";
+            color: #fff;
+        }
+    }
+
+}

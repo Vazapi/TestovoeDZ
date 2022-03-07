@@ -1,0 +1,157 @@
+.header {
+    position: relative;
+    &__navi {
+        background-color: rgb(37, 1, 104);
+        min-height: 80px;
+        min-width: 100%;
+        padding: 10px 30px;
+        position: fixed;
+        z-index: 2;
+        
+        .container {
+            min-width: 950px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__image{
+        
+        width: 40px;
+        height: 40px;
+        
+        text-align: center;
+       
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ;
+        
+        .icon-sphere:before {
+            content: "\1f367";
+            color: white;
+            font-size: 40px;
+            
+          }
+        
+        
+    }
+    &__logo {
+        margin-left: 5px;
+        width: 130px;
+        text-align: center;
+    }
+    &__link {
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 300;
+        color: $text_color;
+        
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+            text-shadow: 3px 3px 10px white;
+        }
+        &:active {
+            color: rgb(168, 168, 168);
+            text-shadow: 3px 3px 10px rgb(168, 168, 168);
+        }
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-left: 20px;
+        list-style: none;
+        &__link {
+            color: $text_color;
+            font-size: 20px;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 300;
+            &:hover {
+                color: #fff;
+                text-shadow: 3px 3px 10px white;
+            }
+            &:active {
+                color: rgb(168, 168, 168);
+                text-shadow: 3px 3px 10px rgb(168, 168, 168);
+            }
+        }
+    }
+    &__burger {
+        display: none;
+        position: absolute;
+        right: 100px;
+        top: 45%;
+        transform: translateY(-50%);
+        transition: 0.5s all;
+        span {
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: white;
+            position: relative;
+            
+            &:before {
+                display: block;
+                content: "";
+                width: 20px;
+                height: 3px;
+                background-color: white;
+                position: absolute;
+                top: 7px;
+            }
+            &:after {
+                display: block;
+                content: "";
+                width: 20px;
+                height: 3px;
+                background-color: white;
+                position: absolute;
+                top: -7px;
+            }
+        }
+    }
+    &__close {
+        display: block;
+        position: absolute;
+        right: 100px;
+        top: 45%;
+        transform: translateY(-50%);
+        transition: 0.5s all;
+        span {
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: white;
+            position: relative;
+            transform:  rotate(45deg);
+            transition: 0.5s all;
+            &:before {
+                display: block;
+                content: "";
+                width: 20px;
+                height: 3px;
+                background-color: white;
+                position: absolute;
+                top: 7px;
+                
+                transform:  rotate(-90deg) translateX(7px);
+                
+            }
+            &:after {
+                display: none;
+                content: "";
+                width: 20px;
+                height: 3px;
+                background-color: white;
+                position: absolute;
+                top: -7px;
+            }
+        }
+    }
+    
+}

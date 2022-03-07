@@ -1,0 +1,23 @@
+ @import 'base/variables';
+
+ *  {
+     font-family: "Roboto";
+     
+     
+ }
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+ @import 'blocks/header';
+ @import 'blocks/introduction';
+ @import 'blocks/description';
+ @import 'blocks/sides';
+ @import 'blocks/download';
+ @import 'blocks/footer';
+ @import 'blocks/buttons';
+
+
+ @import 'base/media';

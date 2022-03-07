@@ -1,0 +1,66 @@
+.sides {
+    padding: 40px 30px 40px 30px;
+    min-height: 400px;
+    //  background: url('./../image/bg/bg gray.jpg') center (center/cover) no-repeat;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(39, 39, 39));
+    
+    &__wrapper {
+        display: flex;
+        
+        justify-content: space-around;
+    }
+    &__plus {
+        
+        max-width: 400px;
+        list-style: none;
+        li {
+            color: $text_color;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                left: -28px;
+                top: 9px;
+                width: 16px;
+                height: 2px;
+                background-color: rgba(255, 255, 255);
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                left: -21px;
+                top: 2px;
+                width: 2px;
+                height: 16px;
+                background-color: rgba(255, 255, 255);
+            }
+        }
+    }
+    &__minus {
+        
+        max-width: 400px;
+        list-style: none;
+        li {
+            position: relative;
+            color: $text_color;
+            &:before {
+                content: '';
+                position: absolute;
+                left: -29px;
+                top: 10px;
+                width: 16px;
+                height: 2px;
+                background-color: rgba(255, 255, 255);
+            }
+        }
+    }
+    &__title {
+        color: $text_color;
+        font-size: 34px;
+        text-align: center;
+    }
+    &__head {
+        font-size: 24px;
+        color: $text_color;
+    }
+}

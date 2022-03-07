@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a name="introduction"></a>
+            <nav class="header__navi" id="#top">
+                
+                <div class="container">
+                    <div class="header__image">
+                        
+                        <span class="icon-sphere"></span>
+                    </div>
+                    <div class="header__logo">
+                        <a href="https://developer.mozilla.org/ru/docs/Web" class="header__link" target='_blank'>Web Technology</a>
+                    </div>
+                    <div class="header__wrapper">
+                        <ul class="header__list">
+                            <li><a href="#introduction"  class="header__list__link">Введение</a></li>
+                            <li><a href="#history"  class="header__list__link">История</a></li>
+                            <li><a href="#sides_p"  class="header__list__link">Достоинства</a></li>
+                            <li><a href="#sides_m"  class="header__list__link">Недостатки</a></li>
+                            <li><a href="#download"  class="header__list__link">Установка</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__burger ">
+                        <span></span>
+                    </div>
+                </div>
+                
+            </nav>
+    </header>
+    <section class="introduction">
+        <div class="container">
+            <div class="introduction__text">
+                
+                <h1 class="introduction__title">
+                    Введение
+                </h1>
+                <p class="introduction__descr">
+                    Современные веб-технологии предоставляют разработчикам неограниченные возможности для реализации своих идей. Для того, чтобы вы могли использовать весь их потенциал, необходимо знать как правильно их использовать. Здесь мы рассмотрим Gulp 
+                </p>
+
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="description">
+        <div class="container">
+            <div class="description__wrapper">
+                
+                <h2 class="description__title">Gulp</h2>
+                <a href="https://gulpjs.com/" target='_blank'>
+                    <img  src="image/icons/gulp-seeklogo.com.svg"  class="description__image" alt="logo-gulp">
+                </a>
+            </div>
+            
+            <div class="description__subtitle" for="history">
+                <a name="history"></a>
+                <p>Gulp позволяет автоматизировать рутинные задачи. Он умеет компилировать Sass в CSS, добавлять в код шаблоны или заплатки для браузеров, автоматически обновлять страницы после внесения в код каких-либо изменений.</p> 
+                <p>Это программа для выполнения задач, которая использует Node.js в качестве платформы. Gulp использует только код JavaScript и помогает запускать внешние задачи и крупномасштабные веб-приложения. Он создает системные автоматизированные задачи, такие как минимизация CSS и HTML, объединение библиотечных файлов и компиляция файлов SASS. Эти задачи можно запустить с помощью сценариев Shell или Bash в командной строке.</p>
+            </div>
+
+            <div class="description__reason">
+                <div class="description__reason-tit">Зачем его использовать:</div>
+                <ol class="description__reason-list">
+                    <li>Это короче, проще и быстрее по сравнению с другими бегунами задач.</li>
+                    <li>Использует SASS и LESS в качестве CSS-препроцессора.</li>
+                    <li>Автоматически обновляет страницу после редактирования исходных файлов.</li>
+                    <li>Легко понять и создать Gulpfile.js, потому что он использует чистый код JavaScript для построения задачи.</li>
+                    
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="sides">
+        <div class="container">
+            <h2 class="sides__title">Достоинства и недостатки</h2>
+            <div class="sides__wrapper">
+                <a href="#" name="sides_p"></a>
+                <ul class="sides__plus">
+                    <div class="sides__head">Плюсы:</div>
+                    <li>Огромное преимущество в скорости перед любым другим бегущим заданием</li>
+                    <li>Легко кодировать и понимать.</li>
+                    <li>Легко тестировать веб-приложения.</li>
+                    <li>Плагины просты в использовании и предназначены для одновременного выполнения одного действия.</li>
+                    <li>Многократно выполняет повторяющиеся задачи, такие как минимизация таблиц стилей, сжатие изображений и т.д.</li>
+                    
+                </ul>
+                <a href="#" name="sides_m"></a>
+                <ul class="sides__minus" >
+                    <div class="sides__head">Минусы:</div>
+                    <li>Больше количества зависимостей и является новичком по сравнению с Grunt.</li>
+                    <li>Используя плагины Gulp, вы не можете выполнять несколько задач.</li>
+                    <li>Конфигурация не так чиста, как Grunt.</li>
+                </ul>
+            </div>
+        </div> 
+
+        
+    </section>
+
+    <section class="download">
+        <div class="container">
+            <a href="#" name="download"></a>
+            <h2 class="download__title" >
+                Загрузка и установка
+            </h2>
+            <p class="download__subtitle">Нужно установить Node.js, а далее воспользоваться инструкцией с оф сайта Gulp. Ссылки ниже:</p>
+            <div class="download__wrapper">
+                <div class="download__item">
+                    <a href="https://nodejs.org/ru/" target="_blank" class="download__link download__link-node">Установщик Node.js</a>
+                    <div class="download__image"><img src="image/node js.jpg" alt="screen_node_js_page"></div>
+                </div>
+                <div class="download__item">
+                    <a href="https://gulpjs.com/docs/en/getting-started/quick-start" target="_blank" class="download__link download__link-gulp">Инструкция Gulp</a>
+                <div class="download__image"><img src="image/gulp screen.jpg" alt="screen gulp_page"></div>
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__text">Мы в соцсетях:</div>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__link">
+                    <li>
+                    <span class="icon-facebook"></span>
+                    </li>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="footer__link">
+                    <li>
+                        <span class="icon-instagram"></span>
+                    </li>
+                </a>
+                <a href="https://vk.com/" target="_blank" class="footer__link">
+                    <li>
+                        <span class="icon-vk"></span>
+                        </i>
+                    </li>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <a class="button__up" href="#top">
+        <span class="icon-arrow-up2"></span>
+    </a>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
